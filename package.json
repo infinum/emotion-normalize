@@ -1,0 +1,33 @@
+{
+  "name": "emotion-normalize",
+  "version": "0.1.0",
+  "description": "Normalize file for emotion JSS library",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infinum/emotion-normalize.git"
+  },
+  "keywords": [
+    "emotion",
+    "normalize",
+    "jss",
+    "css",
+    "styles",
+    "import",
+    "components"
+  ],
+  "author": "Infinum JavaScript Team <hello@infinum.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infinum/emotion-normalize/issues"
+  },
+  "homepage": "https://github.com/infinum/emotion-normalize#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "normalize.css": "latest"
+  },
+  "dependencies": {
+    "emotion": "^8.0.8",
+    "react-emotion": "^8.0.8"
+  }
+}
