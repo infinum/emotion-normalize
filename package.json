@@ -22,6 +22,9 @@
     "url": "https://github.com/infinum/emotion-normalize/issues"
   },
   "homepage": "https://github.com/infinum/emotion-normalize#readme",
+  "scripts": {
+    "snippet": "./bin/build.js"
+  },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "normalize.css": "latest"
