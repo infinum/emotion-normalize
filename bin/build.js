@@ -38,7 +38,7 @@ readStream.on('data', (chunk) => {
     const regex = /\/\*[\s\S]*?\*\/|([^:]|^)\/\/.*$/gm;
     const normalize = original.replace(regex, '').replace(/^\s*\n/gm, '');
 
-    const contents = `import {injectGlobal} from 'emotion';\n\nconst normalize = injectGlobal\`${normalize}\`;\n\nexport default normalize;`;
+    const contents = `import {css} from 'emotion';\n\nconst normalize = css\`${normalize}\`;\n\nexport default normalize;`;
 
     fs.writeFile('./index.js', contents, (error) => {
       if (error) {
