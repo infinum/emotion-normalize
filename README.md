@@ -10,6 +10,25 @@ The original `normalize.css` is pulled from [necolas/normalize.css](https://gith
 npm install --save emotion-normalize
 ```
 
+### JavaScript
+
+```js
+// global.js - place in your app where global styles reside
+import emotionNormalize from 'emotion-normalize';
+import {injectGlobal} from 'emotion';
+
+/* eslint-disable no-unused-expressions */
+injectGlobal`
+${emotionNormalize}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}`;
+/* eslint-enable */
+```
 
 ## License
 

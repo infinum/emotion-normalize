@@ -22,12 +22,14 @@
     "url": "https://github.com/infinum/emotion-normalize/issues"
   },
   "homepage": "https://github.com/infinum/emotion-normalize#readme",
+  "scripts": {
+    "snippet": "./bin/build.js"
+  },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
-    "normalize.css": "latest"
+    "normalize.css": "^7.0.0"
   },
-  "dependencies": {
-    "emotion": "^8.0.8",
-    "react-emotion": "^8.0.8"
+  "peerDependencies": {
+    "emotion": "^8.0.8"
   }
 }
