@@ -21,12 +21,15 @@ import {injectGlobal} from 'emotion';
 injectGlobal`
 ${emotionNormalize}
 
+// You can continue writing global styles, for instance
 *, *::after, *::before {
   box-sizing: border-box;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-}`;
+}
+...
+`;
 /* eslint-enable */
 ```
 
