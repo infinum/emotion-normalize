@@ -1,8 +1,8 @@
 {
   "name": "emotion-normalize",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "description": "Normalize file for emotion JSS library",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/infinum/emotion-normalize.git"
@@ -23,13 +23,21 @@
   },
   "homepage": "https://github.com/infinum/emotion-normalize#readme",
   "scripts": {
-    "build": "./bin/build.js",
+    "prebuild": "./bin/build.js",
+    "build": "babel -d dist src",
     "update": "ncu -u normalize.css",
-    "prepublish": "npm run update && npm run build"
+    "prepublish": "npm run update && npm run prebuild",
+    "postversion": "git push origin master --tags && npm publish"
   },
   "devDependencies": {
     "@infinumjs/eslint-config": "^1.1.0",
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
+    "babel-plugin-emotion": "^8.0.12",
+    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-es2015-template-literals": "^6.22.0",
+    "emotion": "^8.0.8",
     "eslint": "^4.16.0",
     "eslint-plugin-import": "^2.8.0",
     "normalize.css": "^7.0.0",
