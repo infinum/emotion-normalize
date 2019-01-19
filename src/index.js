@@ -3,31 +3,17 @@ import {css} from 'emotion';
 const normalize = css`
 html {
   line-height: 1.15; 
-  -ms-text-size-adjust: 100%; 
   -webkit-text-size-adjust: 100%; 
 }
 body {
   margin: 0;
 }
-article,
-aside,
-footer,
-header,
-nav,
-section {
+main {
   display: block;
 }
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-figcaption,
-figure,
-main { 
-  display: block;
-}
-figure {
-  margin: 1em 40px;
 }
 hr {
   box-sizing: content-box; 
@@ -39,17 +25,12 @@ pre {
   font-size: 1em; 
 }
 a {
-  background-color: transparent; 
-  -webkit-text-decoration-skip: objects; 
+  background-color: transparent;
 }
 abbr[title] {
   border-bottom: none; 
   text-decoration: underline; 
   text-decoration: underline dotted; 
-}
-b,
-strong {
-  font-weight: inherit;
 }
 b,
 strong {
@@ -60,13 +41,6 @@ kbd,
 samp {
   font-family: monospace, monospace; 
   font-size: 1em; 
-}
-dfn {
-  font-style: italic;
-}
-mark {
-  background-color: #ff0;
-  color: #000;
 }
 small {
   font-size: 80%;
@@ -84,26 +58,15 @@ sub {
 sup {
   top: -0.5em;
 }
-audio,
-video {
-  display: inline-block;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
 img {
   border-style: none;
-}
-svg:not(:root) {
-  overflow: hidden;
 }
 button,
 input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; 
+  font-family: inherit; 
   font-size: 100%; 
   line-height: 1.15; 
   margin: 0; 
@@ -117,10 +80,10 @@ select {
   text-transform: none;
 }
 button,
-html [type="button"], 
+[type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; 
+  -webkit-appearance: button;
 }
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -147,8 +110,7 @@ legend {
   white-space: normal; 
 }
 progress {
-  display: inline-block; 
-  vertical-align: baseline; 
+  vertical-align: baseline;
 }
 textarea {
   overflow: auto;
@@ -166,7 +128,6 @@ textarea {
   -webkit-appearance: textfield; 
   outline-offset: -2px; 
 }
-[type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -174,15 +135,11 @@ textarea {
   -webkit-appearance: button; 
   font: inherit; 
 }
-details, 
-menu {
+details {
   display: block;
 }
 summary {
   display: list-item;
-}
-canvas {
-  display: inline-block;
 }
 template {
   display: none;

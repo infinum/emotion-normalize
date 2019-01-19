@@ -1,6 +1,6 @@
 {
   "name": "emotion-normalize",
-  "version": "8.0.0",
+  "version": "10.0.0",
   "description": "Normalize file for emotion JSS library",
   "main": "dist/index.js",
   "repository": {
@@ -37,13 +37,13 @@
     "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-es2015-template-literals": "^6.22.0",
-    "emotion": "^8.0.8",
+    "emotion": "latest",
     "eslint": "^4.16.0",
     "eslint-plugin-import": "^2.8.0",
     "normalize.css": "^8.0.0",
     "npm-check-updates": "^2.14.0"
   },
   "peerDependencies": {
-    "emotion": ">=8"
+    "emotion": "latest"
   }
 }
