@@ -21,6 +21,6 @@ const readStream = fs.readFileSync(normalizeMain, 'utf8');
 const regex = /\/\*[\s\S]*?\*\/|([^:]|^)\/\/.*$/gm;
 const normalize = readStream.replace(regex, '').replace(/^\s*\n/gm, '');
 
-const contents = `import {css} from 'emotion';\n\nconst normalize = css\`\n${normalize}\`;\n\nexport default normalize;`;
+const contents = `import {css} from '@emotion/core';\n\nconst normalize = css\`\n${normalize}\`;\n\nexport default normalize;`;
 
 fs.writeFileSync('./src/index.js', contents);

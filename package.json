@@ -44,6 +44,6 @@
     "npm-check-updates": "^2.14.0"
   },
   "peerDependencies": {
-    "emotion": ">=8.0.0"
+    "emotion": ">=10.0.0"
   }
 }
