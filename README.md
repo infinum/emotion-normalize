@@ -13,24 +13,24 @@ npm install --save emotion-normalize
 ### JavaScript
 
 ```js
-// global.js - place in your app where global styles reside
+import { Global, css } from "@emotion/core";
 import emotionNormalize from 'emotion-normalize';
-import {injectGlobal} from 'emotion';
 
-/* eslint-disable no-unused-expressions */
-injectGlobal`
-${emotionNormalize}
+// ...
 
-// You can continue writing global styles, for instance
-*, *::after, *::before {
-  box-sizing: border-box;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-}
-...
-`;
-/* eslint-enable */
+<Global
+  styles={css`
+    ${emotionNormalize}
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      background: white;
+      min-height: 100%;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+  `}
+/>
 ```
 
 ## License
