@@ -1,4 +1,4 @@
-declare module "emotion-normalize" {
-    import { SerializedStyles } from "@emotion/core";
-    export default SerializedStyles;
-}
+import { SerializedStyles } from '@emotion/core';
+
+declare const normalize: SerializedStyles;
+export default normalize;
