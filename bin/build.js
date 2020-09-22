@@ -10,7 +10,7 @@ const readStream = fs.readFileSync(normalizeMain, 'utf8');
 const regex = /\/\*[\s\S]*?\*\/|([^:]|^)\/\/.*$/gm;
 const normalize = readStream.replace(regex, '').replace(/^\s*\n/gm, '');
 
-const contents = `import { css } from '@emotion/core';
+const contents = `import { css } from '@emotion/react';
 
 const normalize = css\`
 ${normalize}\`;
