@@ -13,7 +13,7 @@ npm install --save emotion-normalize
 ### JavaScript
 
 ```js
-import { Global, css } from "@emotion/core";
+import { Global, css } from "@emotion/react";
 import emotionNormalize from 'emotion-normalize';
 
 // ...
